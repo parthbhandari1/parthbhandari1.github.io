@@ -24,10 +24,3 @@ function toggleTheme() {
 
 // Add event listener to theme toggle button
 themeToggle.addEventListener('click', toggleTheme);
-
-// Set initial theme and icon visibility
-const savedTheme = localStorage.getItem('theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-themeColorMeta.setAttribute('content', savedTheme === 'dark' ? '#1a1a1e' : '#fafafa');
-sunIcon.style.display = savedTheme === 'light' ? 'block' : 'none';
-moonIcon.style.display = savedTheme === 'dark' ? 'block' : 'none';

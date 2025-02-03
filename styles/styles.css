@@ -6,13 +6,13 @@
 
 :root {
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    --text-primary: #d1d1d1; /* Dark theme text */
-    --text-secondary: #999999; /* Dark theme text */
-    --bg-main: #1a1a1e; /* Dark theme background */
-    --bg-subtle: #18181c; /* Dark theme subtle background */
-    --border-color: #353536; /* Dark theme border */
-    --link-hover: #ffffff; /* Dark theme link hover */
-    --selection-bg: rgba(113, 162, 255, 0.2); /* Dark theme selection */
+    --text-primary: #d1d1d1;
+    --text-secondary: #999999;
+    --bg-main: #1a1a1e;
+    --bg-subtle: #18181c;
+    --border-color: #353536;
+    --link-hover: #ffffff;
+    --selection-bg: rgba(113, 162, 255, 0.2);
     --selection-color: var(--text-primary);
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: 120ms cubic-bezier(0.1, 0.7, 0.1, 1);
