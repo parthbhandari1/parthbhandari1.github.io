@@ -17,11 +17,6 @@
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: 120ms cubic-bezier(0.1, 0.7, 0.1, 1);
     --theme-toggle-size: 32px;
-    --page-transition: 0.4s var(--transition-smooth);
-    --popup-bg: rgba(0, 0, 0, 0.1);
-    --z-page: 1;
-    --z-theme: 2;
-    --z-popup: 3;
 }
 
 /* Light theme variables */
@@ -183,10 +178,26 @@ h2 {
     color: var(--text-secondary);
 }
 
+.company-logo img {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Footer */
 .footer {
     padding: 48px 0;
     margin-top: 48px;
+}
+
+.footer p {
+    font-size: 16px;
 }
 
 .social-links {
