@@ -3,10 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth says hi!</title>
+    <meta name="description" content="Personal portfolio showcasing my skills, experience, and projects.">
+    <title>Parth Bhandari</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/images/P.png" type="image/png">
+    <link rel="preload" href="assets/icons/favicon.png" as="image" />
+    <meta name="theme-color" content="#fafafa" id="theme-color-meta" />
+
+    <!-- Immediately set theme before page loads -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            document.getElementById("theme-color-meta").setAttribute("content", savedTheme === "dark" ? "#1a1a1e" : "#fafafa");
+        })();
+    </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first webpage!</p>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </button>
+
+    <header class="header">
+        <div class="container">
+            <h1>Parth Bhandari</h1>
+            <p>नमस्ते (Namaste)! I’m Parth Bhandari, a Software Engineer turned graduate student at <a href="https://www.utah.edu/" target="_blank">the University of Utah</a>. While I’ve worked with code in real-world environments, I’m now diving deeper into the world of tech through my M.S. in Computer Science.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/parth.jpg" alt="Parth Bhandari">
+                </div>
+                <div class="about-text">
+                    <p>Namaste! I'm Parth Bhandari, a passionate Software Engineer.</p>
+                    <a href="https://drive.google.com/file/d/1ypjXdU949JqokSyr1RFdrb96cyZkMizJ/view?usp=sharing" target="_blank" class="cta-button">Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <h3>Pratham Software</h3>
+                    <p><strong>Software Engineer</strong></p>
+                    <p><strong>Duration:</strong> Year - Present</p>
+                    <p>Developed conversational AI chatbots using advanced RAG techniques, improving response accuracy by 25%, and fine-tuned OpenAI LLM models to automate manual tasks, achieving 90%+ classification accuracy. Automated data workflows using Python, AWS Lambda, and S3, boosting downstream team efficiency by 30%. Contributed as a backend developer to a cloud-native GCP application, building scalable search functionality. Embraced Agile methodologies, delivering projects 20% faster through cross-functional collaboration.</p>
+                </article>
+                <article class="experience-card">
+                    <h3>Pratham Software</h3>
+                    <p><strong>Software Engineer (Trainee)</strong></p>
+                    <p><strong>Duration:</strong> Year - Year</p>
+                    <p>Designed and developed a Resume Management System microservice, streamlining the resume creation process for employees and optimizing organizational efficiency. Spearheaded the overhaul of the system's UI, integrating user feedback from 10+ focus groups to create a streamlined experience, which improved task completion rates by 90% and increased employee satisfaction scores by 75%. Collaborated with team members using version control systems such as Git to organize modifications, assign tasks, and ensure seamless project coordination.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Conversational AI Chatbot</h3>
+                    <p>Brief description of the project.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Recommendation System</h3>
+                    <p>Brief description of the project.</p>
+                </article>
+                <article class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Brief description of the project.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Resume Management System</h3>
+                    <p>Brief description of the project.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Don't be shy! Hit me up!</p>
+            <div class="social-links">
+                <a href="https://github.com/parthbhandari1/" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/parthbhandari/" target="_blank">LinkedIn</a>
+                <a href="mailto:parthbhandari0109@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
